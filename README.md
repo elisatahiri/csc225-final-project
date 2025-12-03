@@ -4,8 +4,8 @@ A web application that displays characters from the Harry Potter universe using 
 
 ## Live Demo
 
-- **GitHub Pages:** [Your GitHub.io URL here]
-- **Repository:** [Your GitHub.com URL here]
+- **GitHub Pages:** [(https://elisatahiri.github.io/csc225-final-project/)]
+- **Repository:** [https://github.com/elisatahiri/csc225-final-project/]
 
 ## Features
 
