@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Details - Harry Potter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Harry Potter</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="random.html">Random Character</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <section class="py-5">
+        <div class="container">
+            <a href="index.html" class="btn btn-outline-secondary mb-4">
+                <i class="bi bi-arrow-left me-2"></i>Back to Characters
+            </a>
+
+
+            <div id="loading" class="text-center py-5">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <div id="errorMessage" class="alert alert-danger d-none" role="alert"></div>
+
+
+            <div id="characterDetail" class="row d-none">
+                <div class="col-md-4 mb-4">
+                    <img id="characterImage" src="" alt="" class="img-fluid rounded shadow">
+                </div>
+
+                <div class="col-md-8">
+                    <h1 id="characterName" class="mb-3"></h1>
+                    <span id="houseBadge" class="badge mb-4"></span>
+                    
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="bi bi-person-fill me-2"></i>Personal Information</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p><strong>Species:</strong> <span id="species"></span></p>
+                                    <p><strong>Gender:</strong> <span id="gender"></span></p>
+                                    <p><strong>Date of Birth:</strong> <span id="dateOfBirth"></span></p>
+                                    <p><strong>Year of Birth:</strong> <span id="yearOfBirth"></span></p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p><strong>Ancestry:</strong> <span id="ancestry"></span></p>
+                                    <p><strong>Eye Colour:</strong> <span id="eyeColour"></span></p>
+                                    <p><strong>Hair Colour:</strong> <span id="hairColour"></span></p>
+                                    <p><strong>Patronus:</strong> <span id="patronus"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="bi bi-magic me-2"></i>Wand</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p><strong>Wood:</strong> <span id="wandWood"></span></p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p><strong>Core:</strong> <span id="wandCore"></span></p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p><strong>Length:</strong> <span id="wandLength"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="bi bi-camera-reels me-2"></i>Portrayed By</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-0"><span id="actor"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Harry Potter Characters App</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>

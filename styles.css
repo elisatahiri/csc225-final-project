@@ -1,0 +1,96 @@
+
+:root {
+    --gryffindor-primary: #740001;
+    --gryffindor-secondary: #D3A625;
+    --slytherin-primary: #1A472A;
+    --slytherin-secondary: #5D5D5D;
+    --ravenclaw-primary: #0E1A40;
+    --ravenclaw-secondary: #946B2D;
+    --hufflepuff-primary: #FFD800;
+    --hufflepuff-secondary: #000000;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1;
+}
+
+
+.hero-section {
+   padding: 200px 100px;
+}
+
+.character-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+}
+
+.character-card .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.character-card .placeholder-image {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.badge-gryffindor {
+    background-color: var(--gryffindor-primary);
+    color: var(--gryffindor-secondary);
+}
+
+.badge-slytherin {
+    background-color: var(--slytherin-primary);
+    color: #fff;
+}
+
+.badge-ravenclaw {
+    background-color: var(--ravenclaw-primary);
+    color: var(--ravenclaw-secondary);
+}
+
+.badge-hufflepuff {
+    background-color: var(--hufflepuff-primary);
+    color: var(--hufflepuff-secondary);
+}
+
+#characterDetail img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.character-info p {
+    margin-bottom: 0.5rem;
+}
+
+#loading {
+    padding: 3rem 0;
+}
+
+footer {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .character-card .card-img-top {
+        height: 200px;
+    }
+}
