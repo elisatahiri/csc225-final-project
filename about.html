@@ -54,13 +54,14 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="card-title">API Information</h5>
-                            <p class="card-text"><strong>API Used:</strong> HP-API</p>
-                            <p class="card-text"><strong>Base URL:</strong> https://hp-api.onrender.com</p>
+                            <p class="card-text"><strong>API Used:</strong> HP-API (fedeperin)</p>
+                            <p class="card-text"><strong>Base URL:</strong> https://potterapi-fedeperin.vercel.app/en</p>
                             <p class="card-text"><strong>Authentication:</strong> None required</p>
                             <p class="card-text"><strong>Endpoints Used:</strong></p>
                             <ul>
-                                <li><code>/api/characters</code> - Get all characters</li>
-                                <li><code>/api/character/{id}</code> - Get character by ID</li>
+                                <li><code>/characters</code> - Get all characters</li>
+                                <li><code>/characters/random</code> - Get a random character</li>
+                                <li>The character detail is fetched by filtering the full list by <code>index</code> on the client side.</li>
                             </ul>
                         </div>
                     </div>
@@ -82,10 +83,11 @@
                         <div class="card-body">
                             <h5 class="card-title">Features</h5>
                             <ul>
-                                <li>Browse all Harry Potter characters</li>
+                                <li>Browse all Harry Potter characters with pagination/load more</li>
                                 <li>Filter characters by Hogwarts house</li>
                                 <li>Search characters by name</li>
                                 <li>View detailed character information</li>
+                                <li>View a random character</li>
                                 <li>Responsive design for all devices</li>
                             </ul>
                         </div>
@@ -99,6 +101,7 @@
                                 <li>Use the search bar to find specific characters</li>
                                 <li>Use the dropdown to filter by house</li>
                                 <li>Click on a character card to view more details</li>
+                                <li>Visit the "Random Character" page for a surprise!</li>
                             </ol>
                         </div>
                     </div>
